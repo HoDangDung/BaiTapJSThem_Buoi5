@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>JS Thêm Buổi 5</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container py-5">
+        <!-- Tính tiền cáp -->
+        <div class="card">
+            <div class="card-header">
+                Tính tiền cáp
+            </div>
+            <div class="card-body">
+
+                <select id="mySelect" class="py-2 px-3 mb-2" onchange="myFunction()">
+                    <option>Chọn loại khách hàng</option>
+                    <option value="dan">Nhà dân</option>
+                    <option value="doanhNghiep">Doanh Nghiệp</option>
+                    
+                </select>
+
+                <div class="form-group">
+                    <label for="">Nhập mã khách hàng</label>
+                    <input type="text" class="form-control" name="" id="maKhachHang">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Số kênh cao cấp</label>
+                    <input type="text" class="form-control" name="" id="soKenh">
+                </div>
+
+                <div id="ketNoi" class="form-group" style = "display: none">
+                  <label for="">Số kết nối</label>
+                  <input id="soKetNoi" class="form-control" type="number"/>
+                </div>
+
+                <button onclick="tinhTienCap()" class="btn btn-success">Tính tiền cáp</button>
+            </div>
+            <div id="tinhTienCap" class="card-footer text-muted">
+                Hồ Đăng Dũng
+            </div>
+            <!-- =============== -->
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="./js/bai1.js"></script>
+    <script src="./js/bai2.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
